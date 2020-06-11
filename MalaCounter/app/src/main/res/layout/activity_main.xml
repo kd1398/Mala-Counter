@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@mipmap/crop"
+    android:id="@+id/gayatrimaScreen">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="20dp">
+
+        <EditText
+            android:id="@+id/txtcount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Number Of Mala"
+            android:textColorHint="@color/white"
+            android:inputType="number"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:id="@+id/txtManka"
+            android:text="0"
+            style="@style/count"/>
+
+        <TextView
+            android:text="Manka"
+            style="@style/txt" />
+
+        <TextView
+            android:id="@+id/txtMala"
+            android:text="0"
+            style="@style/count"/>
+        <TextView
+            android:text="Mala"
+            style="@style/txt"/>
+
+        <Button
+            android:id="@+id/btnpause"
+            app:icon="@mipmap/pause"
+            app:iconTint="@color/white"
+            style="@style/btn"
+            android:text="Pause" />
+
+        <Button
+            android:id="@+id/btnresume"
+            style="@style/btn"
+            app:icon="@mipmap/play"
+            app:iconSize="35dp"
+            app:iconTint="@color/white"
+            android:text="Play" />
+
+    </LinearLayout>
+
+</FrameLayout>
